@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Question } from "../types/Question";
+  import { locale } from "../stores/i18n";
 
   export let questions: Question[] = [];
 
@@ -37,7 +38,9 @@
       on:click={() => toggleAccordion(question.id)}
       class="w-full flex justify-between items-center py-5 text-slate-800"
     >
-      <span class="text-xl font-bold">{question.question_fr}</span>
+      <span class="text-xl font-bold">
+        {$locale === "fr" ? question.question_fr : question.question_en}
+      </span>
       <span
         id="icon-{question.id}"
         class="text-slate-800 transition-transform duration-300"
@@ -61,7 +64,7 @@
       class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
     >
       <p class="pb-5 text-lg text-slate-500">
-        {question.answer_fr}
+        {$locale === "fr" ? question.answer_fr : question.answer_en}
       </p>
     </div>
   </div>

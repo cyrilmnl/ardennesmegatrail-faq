@@ -2,7 +2,10 @@ import { supabase } from "../../supabaseClient";
 
 export const getThemes = async () => {
   try {
-    const { data, error, status } = await supabase.from("theme").select("*");
+    const { data, error, status } = await supabase
+      .from("theme")
+      .select("*")
+      .order("order", { ascending: true });
 
     if (error && status !== 406) throw error;
 
