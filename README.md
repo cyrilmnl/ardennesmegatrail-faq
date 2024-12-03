@@ -6,12 +6,10 @@ This project is a web component for the Ardennes Mega Trail website. (FAQ sectio
   <img src="public/amt.png" alt="AMT" width="200"/>
 </p>
 
-
-| 	          | Version   |
-|------------|-----------|
-| Supabase 	| x.x.x    |
-| Svelte 	   | 5.2   	   |
-
+|          | Version |
+| -------- | ------- |
+| Supabase | x.x.x   |
+| Svelte   | 5.2     |
 
 ### Local dev
 
