@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {},
+    fontFamily: {
+      title: ['"Vicious Stencil"', "sans-serif"],
+    },
   },
   plugins: [],
 };

@@ -11,4 +11,10 @@ export default [
   {
     ignores: ["dist/"],
   },
+  {
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+      "no-undef": "off",
+    },
+  },
 ];
