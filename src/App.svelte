@@ -1,3 +1,5 @@
+<svelte:options customElement={{ tag: "ardennesmegatrail-faq" }} />
+
 <script lang="ts">
   import { onMount } from "svelte";
   import { getThemes } from "./lib/api/theme";
