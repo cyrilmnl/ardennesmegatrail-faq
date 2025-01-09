@@ -20,5 +20,18 @@ export default defineConfig({
       fileName: (format) => `ardennesmegatrail-faq.${format}.js`,
       formats: ["es"],
     },
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (
+            assetInfo.names &&
+            assetInfo.names.some((name) => name.endsWith(".css"))
+          ) {
+            return "ardennesmegatrail-faq.css";
+          }
+          return assetInfo.names ? assetInfo.names[0] : "";
+        },
+      },
+    },
   },
 });

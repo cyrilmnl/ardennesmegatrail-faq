@@ -1,4 +1,6 @@
-<svelte:options customElement={{ tag: "ardennesmegatrail-faq" }} />
+<svelte:options
+  customElement={{ tag: "ardennesmegatrail-faq", shadow: "none" }}
+/>
 
 <script lang="ts">
   import { onMount } from "svelte";
@@ -8,6 +10,7 @@
   import type { Question } from "./lib/types/Question";
   import Accordion from "./lib/components/Accordion.svelte";
   import { t, locale, locales } from "./lib/stores/i18n";
+  import "./app.css";
 
   let themes: Theme[] = [];
   let questions: Question[] = [];
