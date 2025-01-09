@@ -11,7 +11,20 @@ This project is a web component for the Ardennes Mega Trail website. (FAQ sectio
 | Supabase | x.x.x   |
 | Svelte   | 5.2     |
 
-### Local dev
+### Create .env file
+
+```bash
+VITE_SUPABASE_URL=YOUR_SUPABASE_URL
+VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+### Docker install
+
+```bash
+make init
+```
+
+### Local install
 
 ```bash
 # Install
@@ -20,11 +33,4 @@ npm install
 # Build and run
 npm run build
 npm run dev
-```
-
-### Create .env file
-
-```bash
-VITE_SUPABASE_URL=YOUR_SUPABASE_URL
-VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 ```
