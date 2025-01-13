@@ -14,6 +14,7 @@ export default defineConfig({
     postcss: "./postcss.config.js",
   },
   build: {
+    outDir: "dist",
     lib: {
       entry: "./src/App.svelte",
       name: "ardennesmegatrail-faq",

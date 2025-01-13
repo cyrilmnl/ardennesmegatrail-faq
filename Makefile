@@ -4,3 +4,4 @@ help:
 init: ## Build and start
 	@docker compose down -v
 	@docker compose up -d --build
+	@docker compose cp web:/app/public/. ./dist/
