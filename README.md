@@ -1,6 +1,6 @@
 # Ardennes Mega Trail
 
-This project is a web component for the Ardennes Mega Trail website. (FAQ section)
+This project is a web component for the [Ardennes Mega Trail](https://www.ardennes-megatrail.com/) website.
 
 <p align="center">
   <img src="public/amt.png" alt="AMT" width="200"/>
